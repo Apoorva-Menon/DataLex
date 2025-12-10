@@ -400,7 +400,7 @@ python3 -c "from geo_profiler.geo_profiler import profile_dataset"
 Verify installation:
 
 ```bash
-python3 -c "from geo_profiler.geo_profiler import profile_dataset; print('✅ Installation successful')"
+python3 -c "from geo_profiler.geo_profiler import profile_dataset; print('Installation successful')"
 ```
 
 ---
