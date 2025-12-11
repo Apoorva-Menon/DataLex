@@ -1,0 +1,38 @@
+dataset_description:
+  introduction: |
+    Answer the question using the following information.
+
+    First, consider the dataset sample:
+
+    {dataset_sample}
+    Write a concise, coherent description of what the dataset represents and what information it contains. 
+    Do not speculate about the dataset's origin or contents. Describe only what is supported by the provided information.
+  profile_instruction: |
+    Additionally, the dataset profile is as follows:
+
+    {dataset_profile}
+
+    Based on this profile, incorporate key structural or statistical characteristics of the dataset into the description. Avoid repeating information already covered from the sample. Add only relevant clarifications about data completeness, consistency, or attribute patterns.
+    Do not introduce interpretations that are not supported by the data profile.
+  semantic_instruction: |
+    Furthermore, the semantic profile of the dataset columns is as follows:
+    {semantic_profile}
+
+    Incorporate insights from the semantic profile by explaining the roles and meanings of important columns. Highlight how column semantics relate to the dataset's purpose, but avoid listing every column or repeating earlier details.
+    Only describe column meanings when they are explicitly supported by the semantic profile or sample.
+  geospatial_instruction: |
+    Additionally, the dataset has the following geospatial characteristics:
+    {geospatial_profile}
+
+    Explicitly integrate these geospatial characteristics into the description. Refer to the spatial role, geometry type, and spatial resolution, and explain how these spatial properties enable specific geospatial analyses. Avoid redundancy with location attributes already mentioned in other sections.
+  topic_instruction: |
+    Moreover, the dataset topic is: {data_topic}.
+    Based on this topic, add sentence(s) describing meaningful and realistic use cases for this dataset. Focus on analytical, operational, or planning-related applications that align with the topic and data characteristics.
+  closing_instruction: |
+    Question: Use only natural, readable sentences without special formatting. The final description should be concise, avoid repetition, and reflect a clear, data-profiling tone.
+    Write the final description as a smooth, natural-sounding paragraph without hedging or speculative phrases (such as “likely,” “may,” “possibly,” etc.).
+
+    Answer:
+  system_message: |
+    Your goal is to improve the readability, clarity, and analytical usefulness of dataset descriptions. Produce descriptions that are factual, non-redundant, and helpful for users exploring datasets.
+    Avoid speculation. Base all statements strictly on the provided dataset sample, profile, semantic information, and geospatial characteristics.

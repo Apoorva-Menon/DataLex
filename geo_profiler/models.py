@@ -5,15 +5,17 @@ from typing import List, Optional, Dict
 @dataclass
 class ColumnSemantic:
     name: str
-    semantic_type: str                          # e.g., "location", "coordinate", "polygon"
-    spatial_resolution: Optional[str] = None    # e.g., "Street", "ZIP", "Coordinates"
-    domain_type: Optional[str] = None           # e.g., "geography", "gis"
-    function_role: Optional[str] = None         # e.g., "measurement", "identifier"
+    is_spatial: bool
+    spatial_resolution: Optional[str]
+    is_temporal: bool
+    domain_type: Optional[str]
+    function: Optional[str]
+    raw_type: Optional[str]
+    sample_values: List[str] = field(default_factory=list)
 
 # Dataset-Level Semantics
 @dataclass
 class DatasetSemanticProfile:
-    dataset_name: str
     columns: List[ColumnSemantic] = field(default_factory=list)
 
     has_spatial: bool = False
