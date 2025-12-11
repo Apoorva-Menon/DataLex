@@ -412,7 +412,7 @@ If you use this geospatial profiler in your research, please cite:
 ```bibtex
 @misc{datalex-geo-profiler,
   title={Geospatial Profiler for AutoDDG},
-  author={Veeramani Veera, Pavan and Nyu, Apoorva and Anu},
+  author={Apoorva, Anuhiya, Pavan},
   year={2024},
   url={https://github.com/Apoorva-Menon/DataLex}
 }
