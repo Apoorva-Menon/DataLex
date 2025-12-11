@@ -9,6 +9,7 @@ from .profilers.spatial_use_cases_profiler import SpatialUseCaseProfiler
 from .semantic_parser import SemanticParser
 import pandas as pd
 
+
 class GeoProfiler:
     """
     Orchestrates all geospatial enrichment steps:
