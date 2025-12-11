@@ -1,6 +1,7 @@
 from .models import (
     GeoProfile
 )
+
 from .models import GeoProfile
 from .profilers.spatial_role_profiler import SpatialRoleProfiler
 from .profilers.geometry_type_profiler import GeometryTypeProfiler
