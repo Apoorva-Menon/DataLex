@@ -413,7 +413,7 @@ If you use this geospatial profiler in your research, please cite:
 @misc{datalex-geo-profiler,
   title={Geospatial Profiler for AutoDDG},
   author={Apoorva, Anuhiya, Pavan},
-  year={2024},
+  year={2025},
   url={https://github.com/Apoorva-Menon/DataLex}
 }
 ```
