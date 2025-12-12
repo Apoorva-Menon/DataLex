@@ -65,6 +65,7 @@ Refer notebooks package for initial setup
 
 ## Repository Structure
 
+```text
 DataLex/
 ├── examples/
 │   ├── Centerline.csv
@@ -96,6 +97,7 @@ DataLex/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 ---
 
